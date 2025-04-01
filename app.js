@@ -1,32 +1,15 @@
-//DOM Manipulation
-const title = document.querySelector('.heading');
-title.style.color='red';
-console.log(title);
 
-const h1=document.getElementsByTagName('h1');
-h1.style.color='red';
-// GetElementByClassName()
+    document.getElementById("demo").innerHTML = "Hello World!";
 
+    const h1 =document.getElementById('h1');
+    h1.style.color='red';
 
-//GetelementByTagName()
+    let b=2+4;
+    console.log(b);
+    console.log("happy learning");
 
+    document.getElementsByTagName('ul')[0].innerHTML;
+    
+console.log(document.getElementsByTagName('ul')[0].innerHTML);
 
-
-
-// querySelector()
-
-
-
-
-// querySelectorAll()
-
-const lu =document.getElementsByTagName('ul');
-const li = document.getElementsByClassName('list');
-
-lu.append(li);
-console.log(lu);
-li.innerhtml='gware'; 
-let a=2;
-let b =3;
-let c=a+b;
-console.log(c);
+console.log(document.querySelectorAll('li')[1-3].innerHTML);
