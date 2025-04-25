@@ -1,0 +1,31 @@
+Visualizing the DOM 🌳
+
+<html>
+  <head>
+    <title>My Page</title>
+  </head>
+  <body>
+    <h1>Welcome</h1>
+    <p>Hello, World!</p>
+    <button>Click Me</button>
+  </body>
+
+
+  - html
+  - head
+    - title: "My Page"
+  - body
+    - h1: "Welcome"
+    - p: "Hello, World!"
+    - button: "Click Me"
+
+    <p id="message">Click the button to change me!</p>
+<button id="btn">Click Me</button>
+<script>
+  const button = document.getElementById("btn");
+  const message = document.getElementById("message");
+
+  button.addEventListener("click", () => {
+    message.textContent = "You clicked the button!";
+  });
+</script>
