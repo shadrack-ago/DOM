@@ -17,9 +17,15 @@ for (let i = 0; i < listItems.length; i++) {
     console.log(document.querySelectorAll('li')[i].innerHTML);
 }
 
-const ul=document.querySelector('ul')
-const li=document.querySelector('li')
-ul.append(li)
+const ul=document.querySelector('ul');
+const li=document.querySelector('li');
+ul.append(li);
 // console.log(li)
-li.innerHTML='Hannah'
+li.innerHTML='Hannah';
 // li.remove()[0]
+let button = document.querySelector('.btn');
+
+// Use arrow function for onclick event
+button.onclick = () => {
+    button.innerHTML = "Clicked";
+};

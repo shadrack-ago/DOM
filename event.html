@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container{
+            display: flex;
+            justify-content: space-evenly;            
+            flex-wrap: wrap;
+            width: 300px;
+            background-color: aquamarine;
+            padding: 5px;
+            gap: 4px;
+        }
+        .small-container{
+            justify-items: center;
+            width: 40%;
+            border: 2px solid;
+            border-radius: 5px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="small-container">
+            <p>Con-One</p>
+
+            <button type="button" class="btn">ClickMe</button>
+
+        </div>
+        <div class="small-container">
+            <p>Con-One</p>
+
+            <button type="button" class="btn">ClickMe</button>
+
+        </div>
+
+    </div>
+    <script>
+        const button = document.querySelector('.small-container');
+        const alertBtn = () =>{
+            button.style.backgroundColor='red';
+        }
+        button.addEventListener("mouseover", alertBtn);
+
+
+        
+    </script>
+    
+</body>
+</html>
