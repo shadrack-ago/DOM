@@ -61,4 +61,8 @@ const btn2=document.getElementById('btn2');
           button.textContent = "Show Text";
         }
       });
-      
+      const slider = document.getElementById("fontSlider");
+      const text1 = document.getElementById("sliderText");
+    
+      slider.oninput = function () {
+        text1.style.fontSize = `${slider.value}px`;};
