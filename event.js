@@ -66,3 +66,26 @@ const btn2=document.getElementById('btn2');
     
       slider.oninput = function () {
         text1.style.fontSize = `${slider.value}px`;};
+
+
+        // see more projects 
+        const modal = document.getElementById("modal");
+const overlay = document.getElementById("overlay");
+const openModal = document.getElementById("openModal");
+const closeModal = document.getElementById("closeModal");
+
+openModal.onclick = function () {
+  modal.style.display = "block";
+  overlay.style.display = "block";
+};
+
+closeModal.onclick = function () {
+  modal.style.display = "none";
+  overlay.style.display = "none";
+};
+
+// Optional: Close when clicking outside modal
+overlay.onclick = function () {
+  modal.style.display = "none";
+  overlay.style.display = "none";
+};
