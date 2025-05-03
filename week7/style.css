@@ -1,0 +1,33 @@
+.hover-button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.4s ease, transform 0.2s ease-in-out;
+  }
+  
+  .hover-button:hover {
+    background-color: #2ecc71; /* Green */
+    transform: scale(1.1);   /* Slight zoom-in */
+  }
+
+  /* Advanced Transition Example: Multiple Properties */
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: #e74c3c;
+    margin: 50px;
+    transition: width 0.5s ease, height 0.5s ease, background-color 0.3s ease;
+  }
+  
+  /* .box:hover {
+    width: 150px;
+    height: 150px;
+    background-color: #8e44ad; /* Purple *  } */
+  .box:hover {
+    transform: scale(1.5); /* Move the box on hover */
+    transition: transform 0.5s ease; /* Smooth transition for movement */
+  }
